@@ -1,10 +1,15 @@
+import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Producer {
     private String producerName;
-    private List<Product> products;
-    public Producer(String producerName, List<Product> products) {
+    private List<Product> products= new ArrayList<>();
+    public Producer(String producerName) {
         this.producerName = producerName;
-        this.products = products;
+    }
+
+    public List<Product> getProducts() {
+        return products;
     }
 }
